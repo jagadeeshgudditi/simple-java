@@ -14,7 +14,7 @@ pipeline {
     }
     stage('Run Image') {
          steps {
-         sh 'docker run -d -p 8050:8000 --name javaapp javaapp:v1'
+         sh 'docker run -d -p 8050:8000 --name javaappcont javaapp:v1'
          }
     }
     stage('Testing'){
